@@ -14,6 +14,8 @@ public class PacmanController extends KeyAdapter {
 
         int key = e.getKeyCode();
 
+        System.out.println(key);
+
         switch (e.getKeyCode()) {
             case KeyEvent.VK_LEFT: {
                 pacman.direction = Direction.LEFT;

@@ -24,9 +24,10 @@ public class Application {
         }
 
         EventQueue.invokeLater(() -> {
-            UI ui = new UI(grid, pacman, ghosts.toArray(new Ghost[0]));
-            ui.setVisible(true);
+            CurrentGame currentGame = new CurrentGame(grid, pacman, ghosts.toArray(new Ghost[0]));
+            currentGame.setVisible(true);
         });
+
     }
 
     private static Direction getRandomDirection() {
